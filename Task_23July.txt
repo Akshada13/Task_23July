@@ -1,0 +1,132 @@
+Do the below programs in anonymous function and Arrow Functions
+
+1. Print odd numbers in an array
+
+	Solution:
+	*Using Anonymous function:
+        var b = []; 
+		var odd = function(a){
+		for(i=0; i<a.length; i++){
+		if (a[i]%2==0)
+		b.push(a[i]);
+		}
+		}
+		return b;
+		}
+		console.log(odd(a));
+
+		* Using Anonymous function:
+        var b = []; 
+		var odd = (a) => {
+		for(i=0; i<a.length; i++){
+		if (a[i]%2==0)
+		b.push(a[i]);
+		}
+		}
+		return b;
+		}
+		console.log(odd(a));
+
+2. Convert all the strings to title caps in a string array
+
+	Solution:
+	*Using Anonymous function:
+		var str = "hello world";
+		var temp;
+		var conversionToUpperCase =function (str){
+    		temp = str.toUpperCase();
+    		return temp;
+		}
+		console.log(conversionToUpperCase(str));
+		
+    *Using Arrow function:
+		var str = "hello world";
+		var temp;
+		var conversionToUpperCase = (str)=>{
+    		temp = str.toUpperCase();
+    		return temp;
+		}
+		console.log(conversionToUpperCase(str));
+
+3. Sum of all numbers in an array
+
+	Solution:
+	*Using Anonymous function:
+		var arr=[1,2,3,4,5,6,7,8,9,10]
+		var sum = 0;
+		var addition= function(arr){
+		for (i=0;i<arr.length;i++){
+    		sum = sum+arr[i];
+		}
+		return sum;
+		}
+		console.log(addition(arr));
+
+	*Using Arrow function:
+		var arr=[1,2,3,4,5,6,7,8,9,10]
+		var sum = 0;
+		var addition= (arr)=>{
+		for (i=0;i<arr.length;i++){
+    		sum = sum+arr[i];
+		}
+		return sum;
+		}
+		console.log(addition(arr));
+
+4. Return all the prime numbers in an array 
+
+	Solution:
+	*Using Anonymous function:
+		var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 97, 99, 100];
+		var res = num.filter(function (num){
+		if(num < =2 || num % 2 ==0)
+		return false;
+		return true;
+		});
+		console.log(res);
+
+	*Using Arrow function:
+		var num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 97, 99, 100];
+		var res = num.filter( (num)=>{
+		if(num < 2 || num % 2 ==0)
+		return false;
+		return true;
+		});
+		console.log(res);
+
+
+5. Return all the palindromes in an array
+	
+	Solution:
+
+	
+
+
+6. Return median of two sorted arrays of same size
+
+	Solution:
+
+
+7. Remove duplicates from an array
+
+	Solution:
+	*Using Anonymous function:
+		const array = [1,2,3,4,5,6,6,6,7,7,4,3,2,1]
+		var temp = function(array){
+		const set = new Set(array);
+		@3const newArray = […set];
+		return(newArray);
+		}
+		console.log(temp(array));
+
+	*Using Arrow function:
+		const array = [1,2,3,4,5,6,6,6,7,7,4,3,2,1]
+		var temp = (array) => {
+		const set = new Set(array);
+		const newArray = […set];
+		return(newArray);
+		}
+		console.log(temp(array));
+
+ 
+    
